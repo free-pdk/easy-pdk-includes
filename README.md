@@ -7,7 +7,7 @@ This repo should be installed into a easy-pdk/ subdirectory in the root include 
 
 #### To install as a git Submodule:
 - From the root include directory:
-  - `git submodule add https://github.com/free-pdk/pdk-includes.git easy-pdk`
+  - `git submodule add https://github.com/free-pdk/easy-pdk-includes.git easy-pdk`
 - More info: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
 #### These include files assume the use of:
