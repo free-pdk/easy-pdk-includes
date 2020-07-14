@@ -20,3 +20,9 @@ This repo should be installed into a easy-pdk/ subdirectory in the root include 
 #### File Layout:
 - **easy-pdk/calibration.h** - Macros for calibration routines (IHRC, ILRC, and BG) performed during programming.
 - **easy-pdk/serial_num.h** - Macro for writing a unique Serial Number during programming.
+
+### Copyright and License:
+- Copyright (C) 2019-2020 - Original version by freepdk (https://free-pdk.github.io)
+- Copyright (C) 2020 - Split out and refactor by serisman (github@serisman.com)
+- License: [GPL v2 (or later) + Linking Exception](LICENSE)
+  - The linking exception allows this library to be linked (by SDCC) with proprietary (closed source) applications.
