@@ -17,9 +17,9 @@ This repo should be installed into a easy-pdk/ subdirectory in the root includes
 #### These include files assume the use of:
 - The open-source [Small Device C Compiler (SDCC)](http://sdcc.sourceforge.net/)
   - requires version 3.9.0 or newer, version 4.0.0+ preferred
-- The base [pdk-includes repository](https://github.com/free-pdk/pdk-includes)
 - The open-source [Easy PDK Programmer](https://github.com/free-pdk/easy-pdk-programmer-software)
   - requires version 1.3 or newer
+- The open-source [pdk-includes](https://github.com/free-pdk/pdk-includes) repository
 
 ### File Layout:
 - [**calibrate.h**](calibrate.h) - Macros for calibration routines (IHRC, ILRC, and BG) performed during programming.
