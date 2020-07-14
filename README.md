@@ -17,7 +17,7 @@ This repo should be installed into a easy-pdk/ subdirectory in the root include 
 - The base pdk-includes repository: https://github.com/free-pdk/pdk-includes
 - The open source Easy PDK Programmer: https://github.com/free-pdk/easy-pdk-programmer-software
 
-#### File Layout:
+### File Layout:
 - **easy-pdk/calibration.h** - Macros for calibration routines (IHRC, ILRC, and BG) performed during programming.
 - **easy-pdk/serial_num.h** - Macro for writing a unique Serial Number during programming.
 
