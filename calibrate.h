@@ -34,12 +34,18 @@
 #define EASY_PDK_CALTYPE_IHRC 1
 #define EASY_PDK_CALTYPE_ILRC 2
 
-// Placeholders for EASYPDK calibrations executed / replaced by easypdkprog
-#define EASY_PDK_CALIBRATE_IHRC(frequency,millivolt)  EASY_PDK_CALIBRATE_RC_M(EASY_PDK_CALTYPE_IHRC, IHRCR_ADDR, frequency, millivolt)
+// Placeholders for Easy PDK calibration of IHRC, ILRC, and BG executed/replaced by easypdkprog
+
+#define EASY_PDK_CALIBRATE_IHRC(frequency,millivolt) \
+  EASY_PDK_CALIBRATE_RC_M(EASY_PDK_CALTYPE_IHRC, IHRCR_ADDR, frequency, millivolt)
+
 #if defined(ILRCR_ADDR)
-  #define EASY_PDK_CALIBRATE_ILRC(frequency,millivolt)  EASY_PDK_CALIBRATE_RC_M(EASY_PDK_CALTYPE_ILRC, ILRCR_ADDR, frequency, millivolt)
+  #define EASY_PDK_CALIBRATE_ILRC(frequency,millivolt) \
+    EASY_PDK_CALIBRATE_RC_M(EASY_PDK_CALTYPE_ILRC, ILRCR_ADDR, frequency, millivolt)
 #endif
-#define EASY_PDK_CALIBRATE_BG()                       EASY_PDK_CALIBRATE_BG_M(BGTR_ADDR, GPCC_ADDR, GPCS_ADDR)
+
+#define EASY_PDK_CALIBRATE_BG() \
+  EASY_PDK_CALIBRATE_BG_M(BGTR_ADDR, GPCC_ADDR, GPCS_ADDR)
 
 #define EASY_PDK_CALIBRATE_RC_M(type,reg,frequency,millivolt) \
 __asm__(                                \
